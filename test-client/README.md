@@ -32,15 +32,19 @@ You can run the application from command line or using an IDE.
     ```
     npm install
     ```
-    
-2. Run using npm:
+2. Run tests:
+    ```
+    npm test
+    ```    
+
+3. Run using npm:
     ```
     npm start
     ```
 
-3. Your client will be available on port 8082. Go to **http://127.0.0.1:8082/** to test it.
+4. Your client will be available on port 8082. Go to **http://127.0.0.1:8082/** to test it.
 
-4. From the client code you can access the java test api at **http://127.0.0.1:8082/api**. An example of accessing the status endpoint is:
+5. From the client code you can access the java test api at **http://127.0.0.1:8082/api**. An example of accessing the status endpoint is:
     ```
     http://127.0.0.1:8082/api/status
     ```

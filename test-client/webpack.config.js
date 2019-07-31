@@ -14,7 +14,7 @@ const PATHS = {
 };
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/app.js',
   mode: environment,
   output: {
     filename: 'main.js',
