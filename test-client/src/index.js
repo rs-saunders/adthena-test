@@ -7,7 +7,7 @@ const  printMessage = async (message = 'Adthena') => {
   document.getElementById("app").innerHTML = `
     <h1>Hello ${json.message}!</h1>
     <div>
-    Create your content.  
+    This message was generated using data from the status endpoint.
     </div>
   `;
 };
