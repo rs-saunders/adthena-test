@@ -3,6 +3,14 @@ Adthena Test API
 
 This is a simple API service created using Dropwizard.
 
+### Prerequisites
+
+1. Java 1.8 - You should have Java 1.8 already installed on your computer.
+2. Maven 3 - This is a Maven project and it is required to build it and pull all of the dependencies correctly. Depending on your OS, these instructions can vary:
+	* MacOS - the easiest way to install is is via Homebrew.
+	* Linux - most package managers (e. g. `apt`) will already have it available for you.
+	* Others - please Google it and follow the instructions.
+
 ### How to Run It
 
 You can run the application from command line or using an IDE.
