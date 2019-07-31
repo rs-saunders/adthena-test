@@ -19,7 +19,7 @@ You can run the application from command line or using an IDE.
     npm start
     ```
 
-3. Your API will be available on port 8080. Go to **http://127.0.0.1:8082/** to test it.
+3. Your client will be available on port 8082. Go to **http://127.0.0.1:8082/** to test it.
 
 4. There is a client side proxy to the java test api at **http://127.0.0.1:8082/api**. An example of accessing the status endpoint is:
     ```
