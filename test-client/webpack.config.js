@@ -71,6 +71,7 @@ module.exports = {
       },
     ],
   },
+  devtool: isDevelopment ? 'inline-source-map' : 'source-map',
   plugins: [
     new ExtractCssChunks({
       filename: '[name].css',
