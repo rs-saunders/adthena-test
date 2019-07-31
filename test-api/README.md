@@ -17,7 +17,7 @@ You can run the application from command line or using an IDE.
     ```
     java -jar target/test-api-1.0.0-SNAPSHOT.jar server configuration.yml
     ```
-3. Your API will be available on port 8080. Go to **http://localhost:8080/api** to test it.
+3. Your API will be available on port 8080. Go to **http://localhost:8080/status** to test it.
 
 #### Running from an IDE
 

@@ -12,14 +12,14 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import java.util.Optional;
 
-@Path("/api")
+@Path("/status")
 @Produces(MediaType.APPLICATION_JSON)
-public class AdthenaDataResource {
+public class AdthenaStatusResource {
 
     private final ApiConfiguration configuration;
 
     @Inject
-    public AdthenaDataResource(ApiConfiguration configuration) {
+    public AdthenaStatusResource(ApiConfiguration configuration) {
         this.configuration = configuration;
     }
 
