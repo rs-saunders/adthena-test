@@ -5,6 +5,8 @@ This is a simple API service created using Dropwizard.
 
 ### Prerequisites
 
+> NOTE: These will already be installed if you choose to use a laptop provided by us.
+
 1. Java 1.8 - You should have Java 1.8 already installed on your computer.
 2. Maven 3 - This is a Maven project and it is required to build it and pull all of the dependencies correctly. Depending on your OS, these instructions can vary:
     * MacOS - the easiest way to install is is via Homebrew (https://brew.sh/):
@@ -16,19 +18,21 @@ This is a simple API service created using Dropwizard.
 
 ### How to Run It
 
-You can run the application from command line or using an IDE.
+You can run the application from command line or using an IDE (IntelliJ Community Edition is available on the laptop we
+provide).
 
 #### Running from Command Line
 
-1. First you will need to build the fat jar for the application:
+1. Make sure you are inside the `test-api` folder.
+2. First you will need to build the fat jar for the application:
     ```
     mvn clean package
     ```
-2. After this completes, run the following command:
+3. After this completes, run the following command:
     ```
     java -jar target/test-api-1.0.0-SNAPSHOT.jar server configuration.yml
     ```
-3. Your API will be available on port 8080. Go to **http://localhost:8080/status** to test it.
+4. Your API will be available on port 8080. Go to **http://localhost:8080/status** to test it.
 
 #### Running from an IDE
 
