@@ -26,7 +26,7 @@ This is a simple client created using vanilla javascript (ECMAScript 6) using ba
 
 ### How to Run It
 
-You can run the application from command line or using an IDE (IntelliJ Community Edition is available on the laptop we
+You can run the application from command line or using an IDE (VS Code is available on the laptop we
 provide).
 
 #### Running from Command Line
