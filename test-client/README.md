@@ -1,27 +1,6 @@
 Adthena Test Client
 ================
 
-### Prerequisites
-
-> NOTE: These will already be installed if you choose to use a laptop provided by us.
-
-1. Install nvm:
-    ```
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-    ```
-2. Ensure nvm is installed:
-    ```
-    nvm --version
-    ```
-3. Install node:
-    ```
-    nvm install node
-    ```
-4. Ensure node is installed:
-    ```
-    nvm use node
-    ```
-
 This is a simple client created using vanilla javascript (ECMAScript 6) using babel.
 
 ### How to Run It
