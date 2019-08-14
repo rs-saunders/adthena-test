@@ -33,6 +33,7 @@ provide).
     java -jar target/test-api-1.0.0-SNAPSHOT.jar server configuration.yml
     ```
 4. Your API will be available on port 8080. Go to **http://localhost:8080/status** to test it.
+5. You can stop the API using `Ctrl + C`. If you need to use the console for something else, you should open a new terminal tab or window.
 
 #### Running from an IDE
 

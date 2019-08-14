@@ -49,3 +49,4 @@ provide).
     ```
     http://127.0.0.1:8082/api/status
     ```
+7. You can stop the client using `Ctrl + C`. If you need to use the console for something else, you should open a new terminal tab or window.
