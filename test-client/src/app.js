@@ -1,3 +1,3 @@
 import { start } from './sample';
 
-start().catch(e => console.log(e));
+start().catch(e => console.error(e));
