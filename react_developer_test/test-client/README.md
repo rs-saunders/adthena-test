@@ -45,8 +45,5 @@ provide).
     npm start
     ```
 5. Your client will be available on port 8082. Go to **http://127.0.0.1:8082/** to test it.
-6. From the client code you can access the java test api at **http://127.0.0.1:8082/api**. An example of accessing the status endpoint is:
-    ```
-    http://127.0.0.1:8082/api/status
-    ```
-7. You can stop the client using `Ctrl + C`. If you need to use the console for something else, you should open a new terminal tab or window.
+   
+6. You can stop the client using `Ctrl + C`. If you need to use the console for something else, you should open a new terminal tab or window.
