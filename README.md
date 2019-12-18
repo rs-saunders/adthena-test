@@ -1,9 +1,7 @@
-Adthena Programming Test
+Adthena Developer Programming Tests
 ========================
 
-In this repository you will find everything you need to complete the Adthena coding test.
+In this repository you will find the Adthena coding tests.
 
-There are 2 main folders [test-api](test-api) and [test-client](test-client). We recommend opening each of those folders as a separate project in
-your IDE (e. g. IntelliJ or VS Code).
-
-More details about prerequisites, how to run the projects and other useful information can be found in the readme files in those folders.
+The [fullstack_developer_test](fullstack_developer_test). Contains the test and instructions for the fullstack developer programming test.
+The [react_developer_test](react_developer_test). Contains the test and instructions for the React js developer programming test.
