@@ -22,6 +22,15 @@ describe('TaskTwo', () => {
 
   it('renders a todo list', async (done) => {
     const mock = new MockAdapter(axios);
+    mock.onGet('https://jsonplaceholder.typicode.com/users?username=Bret').reply(200, [
+      {
+        id: 1,
+        name: 'Bret',
+        username: 'Leanne Graham',
+        email: 'Sincere@april.biz',
+        website: 'hildegard.org'
+      },
+    ]);
     mock.onGet('https://jsonplaceholder.typicode.com/todos?userId=1').reply(200, [
       {
         userId: 1,

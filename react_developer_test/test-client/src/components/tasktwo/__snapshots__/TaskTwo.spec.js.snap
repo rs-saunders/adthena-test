@@ -32,6 +32,31 @@ exports[`TaskTwo renders a todo list 1`] = `
     >
       <section>
         <h2>
+          Bret
+        </h2>
+        <dl>
+          <dt>
+            Username
+          </dt>
+          <dd>
+            Leanne Graham
+          </dd>
+          <dt>
+            Email
+          </dt>
+          <dd>
+            Sincere@april.biz
+          </dd>
+          <dt>
+            Website
+          </dt>
+          <dd>
+            hildegard.org
+          </dd>
+        </dl>
+      </section>
+      <section>
+        <h2>
           Todo
         </h2>
         <ul>

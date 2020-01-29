@@ -1,8 +1,10 @@
 import React from 'react';
+import useUser from './hooks/useUser';
 import useTodos from './hooks/useTodos';
 
 const TaskTwo = () => {
-  const todos = useTodos(1);
+  const user = useUser('Bret');
+  const todos = useTodos(user.id);
   return (
     <div className="task">
       <h1>Task Two</h1>
@@ -11,6 +13,17 @@ const TaskTwo = () => {
           ? <div>Loading...</div>
           : (
             <>
+              <section>
+                <h2>{user.name}</h2>
+                <dl>
+                  <dt>Username</dt>
+                  <dd>{user.username}</dd>
+                  <dt>Email</dt>
+                  <dd>{user.email}</dd>
+                  <dt>Website</dt>
+                  <dd>{user.website}</dd>
+                </dl>
+              </section>
               <section>
                 <h2>Todo</h2>
                 <ul>

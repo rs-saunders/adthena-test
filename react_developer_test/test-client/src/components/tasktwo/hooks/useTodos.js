@@ -13,7 +13,9 @@ function useTodos(userId) {
         console.error(error);
       }
     }
-    getTodos();
+    if (userId) {
+      getTodos();
+    }
   }, [userId]);
 
   return todos;
