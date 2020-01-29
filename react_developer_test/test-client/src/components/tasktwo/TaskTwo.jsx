@@ -1,51 +1,93 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {
+  Formik,
+  Form,
+  Field,
+  ErrorMessage,
+} from 'formik';
+import * as Yup from 'yup';
+import useUser from './hooks/useUser';
+import useTodos from './hooks/useTodos';
 
-const TaskTwo = () => (
-  <div className="task">
-    <h1>Task Two</h1>
-    <div className="content">
-      <h4>Complete the following task:</h4>
-      <p>
-          The task is to create components to fetch public API data, combine it, apply
-          filtering and visualise that data.
-      </p>
-      <p>Include unit tests. Jest is already configured for you in the skeleton project.</p>
-      Expected:
-      <ol type="1">
-        <li>
-          Use data from the following API endpoints:
-          <ol type="a">
-            <li>https://jsonplaceholder.typicode.com/users</li>
-            <li>https://jsonplaceholder.typicode.com/todos</li>
-          </ol>
-        </li>
-        <li>
-          Data fetching should be done with a re-usable data fetching hook.
-        </li>
-        <li>
-          The user interface must accept a username as input.
-        </li>
-        <li>
-          The user interface must handle the case where an error occurs and the case where the
-          requested user is not found.
-        </li>
-        <li>
-          Display the username, email and website of the user.
-        </li>
-        <li>
-          Display a list of Todos for user.
-        </li>
-        <li>
-          Visualise the Todos in such a way that it is easy to distinguish between the
-          complete and incomplete Todos.
-        </li>
-        <li>
-          Give the user the option of a dark theme for the Todos user interface.
-        </li>
-      </ol>
-      <strong>Feel free to use this component for your implementation.</strong>
+const validationSchema = Yup.object({
+  username: Yup
+    .string()
+    .required('Required'),
+});
+
+const TaskTwo = () => {
+  const [currentUsername, setUsername] = useState('Bret');
+  const user = useUser(currentUsername);
+  const todos = useTodos(user.id);
+  const isLoading = todos === null;
+  return (
+    <div className="task">
+      <h1>Task Two</h1>
+      <div className="content">
+        <Formik
+          initialValues={{ username: currentUsername }}
+          onSubmit={({ username }) => setUsername(username)}
+          validationSchema={validationSchema}
+        >
+          {() => (
+            <Form>
+              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+              <label htmlFor="username">Username:</label>
+              <Field
+                id="username"
+                type="text"
+                name="username"
+              />
+              <button
+                type="submit"
+                disabled={isLoading}
+              >
+                Submit
+              </button>
+              <span>Try: "Antonette"</span>
+              <ErrorMessage
+                name="username"
+                component="div"
+              />
+            </Form>
+          )}
+        </Formik>
+        {todos === null
+          ? <div>Loading...</div>
+          : (
+            <>
+              <section>
+                <h2>{user.name}</h2>
+                <dl>
+                  <dt>Username</dt>
+                  <dd>{user.username}</dd>
+                  <dt>Email</dt>
+                  <dd>{user.email}</dd>
+                  <dt>Website</dt>
+                  <dd>{user.website}</dd>
+                </dl>
+              </section>
+              <section>
+                <h2>Todo</h2>
+                <ul>
+                  {todos
+                    .filter((todo) => !todo.completed)
+                    .map((todo) => <li key={todo.id}>{todo.title}</li>)}
+                </ul>
+              </section>
+              <section>
+                <h2>Completed</h2>
+                <ul>
+                  {todos
+                    .filter((todo) => todo.completed)
+                    .map((todo) => <li key={todo.id}>{todo.title}</li>)}
+                </ul>
+              </section>
+            </>
+          )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default TaskTwo;
