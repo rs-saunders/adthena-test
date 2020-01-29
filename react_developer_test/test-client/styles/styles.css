@@ -74,18 +74,18 @@ h1 {
     margin: auto;
 }
 
-button {
+.buttons button {
     display: flex;
     flex-direction: column;
     padding: 10px;
     margin: auto;
 }
 
-button.selected {
+.buttons button.selected {
     background-color: #216298;
 }
 
-button span {
+.buttons button span {
     font-size: 14px;
     font-weight: bold;
     margin: auto;

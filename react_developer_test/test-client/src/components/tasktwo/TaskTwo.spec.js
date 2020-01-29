@@ -8,6 +8,7 @@ import TaskTwo from './TaskTwo';
 describe('TaskTwo', () => {
   it('renders a Loading... message', async (done) => {
     const mock = new MockAdapter(axios);
+    mock.onGet('https://jsonplaceholder.typicode.com/users?username=Bret').reply(200, []);
     mock.onGet('https://jsonplaceholder.typicode.com/todos?userId=1').reply(200, []);
 
     let wrapper;

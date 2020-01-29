@@ -8,7 +8,7 @@ function useUser(username) {
     async function getTodos() {
       try {
         const { data } = await axios.get(`https://jsonplaceholder.typicode.com/users?username=${username}`);
-        setUser(data[0]);
+        setUser(data[0] || {});
       } catch (error) {
         console.error(error);
       }

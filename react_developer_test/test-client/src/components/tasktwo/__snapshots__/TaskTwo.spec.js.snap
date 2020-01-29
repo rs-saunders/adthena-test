@@ -11,6 +11,103 @@ exports[`TaskTwo renders a Loading... message 1`] = `
     <div
       className="content"
     >
+      <Formik
+        initialValues={
+          Object {
+            "username": "Bret",
+          }
+        }
+        onSubmit={[Function]}
+      >
+        <Form>
+          <form
+            action="#"
+            onReset={[Function]}
+            onSubmit={[Function]}
+          >
+            <label
+              htmlFor="username"
+            >
+              Username:
+            </label>
+            <Field
+              id="username"
+              name="username"
+              type="text"
+            >
+              <input
+                id="username"
+                name="username"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value="Bret"
+              />
+            </Field>
+            <FormikConnect(ErrorMessageImpl)
+              component="div"
+              name="username"
+            >
+              <ErrorMessageImpl
+                component="div"
+                formik={
+                  Object {
+                    "dirty": false,
+                    "errors": Object {},
+                    "getFieldHelpers": [Function],
+                    "getFieldMeta": [Function],
+                    "getFieldProps": [Function],
+                    "handleBlur": [Function],
+                    "handleChange": [Function],
+                    "handleReset": [Function],
+                    "handleSubmit": [Function],
+                    "initialErrors": Object {},
+                    "initialStatus": undefined,
+                    "initialTouched": Object {},
+                    "initialValues": Object {
+                      "username": "Bret",
+                    },
+                    "isSubmitting": false,
+                    "isValid": true,
+                    "isValidating": false,
+                    "registerField": [Function],
+                    "resetForm": [Function],
+                    "setErrors": [Function],
+                    "setFieldError": [Function],
+                    "setFieldTouched": [Function],
+                    "setFieldValue": [Function],
+                    "setFormikState": [Function],
+                    "setStatus": [Function],
+                    "setSubmitting": [Function],
+                    "setTouched": [Function],
+                    "setValues": [Function],
+                    "status": undefined,
+                    "submitCount": 0,
+                    "submitForm": [Function],
+                    "touched": Object {},
+                    "unregisterField": [Function],
+                    "validateField": [Function],
+                    "validateForm": [Function],
+                    "validateOnBlur": true,
+                    "validateOnChange": true,
+                    "validateOnMount": false,
+                    "values": Object {
+                      "username": "Bret",
+                    },
+                  }
+                }
+                name="username"
+              />
+            </FormikConnect(ErrorMessageImpl)>
+            <button
+              disabled={true}
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </Form>
+      </Formik>
       <div>
         Loading...
       </div>
@@ -30,6 +127,103 @@ exports[`TaskTwo renders a todo list 1`] = `
     <div
       className="content"
     >
+      <Formik
+        initialValues={
+          Object {
+            "username": "Bret",
+          }
+        }
+        onSubmit={[Function]}
+      >
+        <Form>
+          <form
+            action="#"
+            onReset={[Function]}
+            onSubmit={[Function]}
+          >
+            <label
+              htmlFor="username"
+            >
+              Username:
+            </label>
+            <Field
+              id="username"
+              name="username"
+              type="text"
+            >
+              <input
+                id="username"
+                name="username"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value="Bret"
+              />
+            </Field>
+            <FormikConnect(ErrorMessageImpl)
+              component="div"
+              name="username"
+            >
+              <ErrorMessageImpl
+                component="div"
+                formik={
+                  Object {
+                    "dirty": false,
+                    "errors": Object {},
+                    "getFieldHelpers": [Function],
+                    "getFieldMeta": [Function],
+                    "getFieldProps": [Function],
+                    "handleBlur": [Function],
+                    "handleChange": [Function],
+                    "handleReset": [Function],
+                    "handleSubmit": [Function],
+                    "initialErrors": Object {},
+                    "initialStatus": undefined,
+                    "initialTouched": Object {},
+                    "initialValues": Object {
+                      "username": "Bret",
+                    },
+                    "isSubmitting": false,
+                    "isValid": true,
+                    "isValidating": false,
+                    "registerField": [Function],
+                    "resetForm": [Function],
+                    "setErrors": [Function],
+                    "setFieldError": [Function],
+                    "setFieldTouched": [Function],
+                    "setFieldValue": [Function],
+                    "setFormikState": [Function],
+                    "setStatus": [Function],
+                    "setSubmitting": [Function],
+                    "setTouched": [Function],
+                    "setValues": [Function],
+                    "status": undefined,
+                    "submitCount": 0,
+                    "submitForm": [Function],
+                    "touched": Object {},
+                    "unregisterField": [Function],
+                    "validateField": [Function],
+                    "validateForm": [Function],
+                    "validateOnBlur": true,
+                    "validateOnChange": true,
+                    "validateOnMount": false,
+                    "values": Object {
+                      "username": "Bret",
+                    },
+                  }
+                }
+                name="username"
+              />
+            </FormikConnect(ErrorMessageImpl)>
+            <button
+              disabled={false}
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </Form>
+      </Formik>
       <section>
         <h2>
           Bret

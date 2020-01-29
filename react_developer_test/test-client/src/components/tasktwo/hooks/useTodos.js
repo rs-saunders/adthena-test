@@ -15,6 +15,8 @@ function useTodos(userId) {
     }
     if (userId) {
       getTodos();
+    } else {
+      setTodos([]);
     }
   }, [userId]);
 

@@ -1,14 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {
+  Formik,
+  Form,
+  Field,
+  ErrorMessage,
+} from 'formik';
 import useUser from './hooks/useUser';
 import useTodos from './hooks/useTodos';
 
 const TaskTwo = () => {
-  const user = useUser('Bret');
+  const [currentUsername, setUsername] = useState('Bret');
+  const user = useUser(currentUsername);
   const todos = useTodos(user.id);
+  const isLoading = todos === null;
   return (
     <div className="task">
       <h1>Task Two</h1>
       <div className="content">
+        <Formik
+          initialValues={{ username: currentUsername }}
+          onSubmit={({ username }) => setUsername(username)}
+        >
+          {() => (
+            <Form>
+              <label htmlFor="username">Username:</label>
+              <Field
+                id="username"
+                type="text"
+                name="username"
+              />
+              <ErrorMessage
+                name="username"
+                component="div"
+              />
+              <button
+                type="submit"
+                disabled={isLoading}
+              >
+                Submit
+              </button>
+            </Form>
+          )}
+        </Formik>
         {todos === null
           ? <div>Loading...</div>
           : (
