@@ -57,4 +57,30 @@ describe('TaskTwo', () => {
     expect(wrapper).toMatchSnapshot();
     done();
   });
+
+  it('validates username is required', async (done) => {
+    const mock = new MockAdapter(axios);
+    mock.onGet('https://jsonplaceholder.typicode.com/users?username=Bret').reply(200, []);
+    mock.onGet('https://jsonplaceholder.typicode.com/todos?userId=1').reply(200, []);
+
+    let wrapper;
+
+    await act(async () => {
+      wrapper = mount(<TaskTwo />);
+    });
+
+    await act(async () => {
+      wrapper.find('input')
+        .simulate('change', { target: { name: 'username', value: '' } });
+    });
+    wrapper.update();
+    await act(async () => {
+      wrapper.find('input')
+        .simulate('blur');
+    });
+    wrapper.update();
+    expect(wrapper).toMatchSnapshot();
+
+    done();
+  });
 });

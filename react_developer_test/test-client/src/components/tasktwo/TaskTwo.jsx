@@ -5,8 +5,15 @@ import {
   Field,
   ErrorMessage,
 } from 'formik';
+import * as Yup from 'yup';
 import useUser from './hooks/useUser';
 import useTodos from './hooks/useTodos';
+
+const validationSchema = Yup.object({
+  username: Yup
+    .string()
+    .required('Required'),
+});
 
 const TaskTwo = () => {
   const [currentUsername, setUsername] = useState('Bret');
@@ -20,18 +27,16 @@ const TaskTwo = () => {
         <Formik
           initialValues={{ username: currentUsername }}
           onSubmit={({ username }) => setUsername(username)}
+          validationSchema={validationSchema}
         >
           {() => (
             <Form>
+              {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
               <label htmlFor="username">Username:</label>
               <Field
                 id="username"
                 type="text"
                 name="username"
-              />
-              <ErrorMessage
-                name="username"
-                component="div"
               />
               <button
                 type="submit"
@@ -39,6 +44,11 @@ const TaskTwo = () => {
               >
                 Submit
               </button>
+              <span>Try: "Antonette"</span>
+              <ErrorMessage
+                name="username"
+                component="div"
+              />
             </Form>
           )}
         </Formik>

@@ -18,6 +18,67 @@ exports[`TaskTwo renders a Loading... message 1`] = `
           }
         }
         onSubmit={[Function]}
+        validationSchema={
+          ObjectSchema {
+            "_blacklist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "_conditions": Array [],
+            "_defaultDefault": [Function],
+            "_deps": Array [],
+            "_excludedEdges": Array [],
+            "_exclusive": Object {},
+            "_mutate": undefined,
+            "_nodes": Array [
+              "username",
+            ],
+            "_options": Object {
+              "abortEarly": true,
+              "recursive": true,
+            },
+            "_type": "object",
+            "_typeError": [Function],
+            "_whitelist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "fields": Object {
+              "username": StringSchema {
+                "_blacklist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "_conditions": Array [],
+                "_deps": Array [],
+                "_exclusive": Object {
+                  "required": true,
+                },
+                "_mutate": undefined,
+                "_options": Object {
+                  "abortEarly": true,
+                  "recursive": true,
+                },
+                "_type": "string",
+                "_typeError": [Function],
+                "_whitelist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "tests": Array [
+                  [Function],
+                ],
+                "transforms": Array [
+                  [Function],
+                ],
+              },
+            },
+            "tests": Array [],
+            "transforms": Array [
+              [Function],
+            ],
+          }
+        }
       >
         <Form>
           <form
@@ -44,6 +105,15 @@ exports[`TaskTwo renders a Loading... message 1`] = `
                 value="Bret"
               />
             </Field>
+            <button
+              disabled={true}
+              type="submit"
+            >
+              Submit
+            </button>
+            <span>
+              Try: "Antonette"
+            </span>
             <FormikConnect(ErrorMessageImpl)
               component="div"
               name="username"
@@ -99,12 +169,6 @@ exports[`TaskTwo renders a Loading... message 1`] = `
                 name="username"
               />
             </FormikConnect(ErrorMessageImpl)>
-            <button
-              disabled={true}
-              type="submit"
-            >
-              Submit
-            </button>
           </form>
         </Form>
       </Formik>
@@ -134,6 +198,67 @@ exports[`TaskTwo renders a todo list 1`] = `
           }
         }
         onSubmit={[Function]}
+        validationSchema={
+          ObjectSchema {
+            "_blacklist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "_conditions": Array [],
+            "_defaultDefault": [Function],
+            "_deps": Array [],
+            "_excludedEdges": Array [],
+            "_exclusive": Object {},
+            "_mutate": undefined,
+            "_nodes": Array [
+              "username",
+            ],
+            "_options": Object {
+              "abortEarly": true,
+              "recursive": true,
+            },
+            "_type": "object",
+            "_typeError": [Function],
+            "_whitelist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "fields": Object {
+              "username": StringSchema {
+                "_blacklist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "_conditions": Array [],
+                "_deps": Array [],
+                "_exclusive": Object {
+                  "required": true,
+                },
+                "_mutate": undefined,
+                "_options": Object {
+                  "abortEarly": true,
+                  "recursive": true,
+                },
+                "_type": "string",
+                "_typeError": [Function],
+                "_whitelist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "tests": Array [
+                  [Function],
+                ],
+                "transforms": Array [
+                  [Function],
+                ],
+              },
+            },
+            "tests": Array [],
+            "transforms": Array [
+              [Function],
+            ],
+          }
+        }
       >
         <Form>
           <form
@@ -160,6 +285,15 @@ exports[`TaskTwo renders a todo list 1`] = `
                 value="Bret"
               />
             </Field>
+            <button
+              disabled={false}
+              type="submit"
+            >
+              Submit
+            </button>
+            <span>
+              Try: "Antonette"
+            </span>
             <FormikConnect(ErrorMessageImpl)
               component="div"
               name="username"
@@ -215,12 +349,6 @@ exports[`TaskTwo renders a todo list 1`] = `
                 name="username"
               />
             </FormikConnect(ErrorMessageImpl)>
-            <button
-              disabled={false}
-              type="submit"
-            >
-              Submit
-            </button>
           </form>
         </Form>
       </Formik>
@@ -272,6 +400,220 @@ exports[`TaskTwo renders a todo list 1`] = `
             a completed task
           </li>
         </ul>
+      </section>
+    </div>
+  </div>
+</TaskTwo>
+`;
+
+exports[`TaskTwo validates username is required 1`] = `
+<TaskTwo>
+  <div
+    className="task"
+  >
+    <h1>
+      Task Two
+    </h1>
+    <div
+      className="content"
+    >
+      <Formik
+        initialValues={
+          Object {
+            "username": "Bret",
+          }
+        }
+        onSubmit={[Function]}
+        validationSchema={
+          ObjectSchema {
+            "_blacklist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "_conditions": Array [],
+            "_defaultDefault": [Function],
+            "_deps": Array [],
+            "_excludedEdges": Array [],
+            "_exclusive": Object {},
+            "_mutate": undefined,
+            "_nodes": Array [
+              "username",
+            ],
+            "_options": Object {
+              "abortEarly": true,
+              "recursive": true,
+            },
+            "_type": "object",
+            "_typeError": [Function],
+            "_whitelist": RefSet {
+              "list": Set {},
+              "refs": Map {},
+            },
+            "fields": Object {
+              "username": StringSchema {
+                "_blacklist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "_conditions": Array [],
+                "_deps": Array [],
+                "_exclusive": Object {
+                  "required": true,
+                },
+                "_mutate": undefined,
+                "_options": Object {
+                  "abortEarly": true,
+                  "recursive": true,
+                },
+                "_type": "string",
+                "_typeError": [Function],
+                "_whitelist": RefSet {
+                  "list": Set {},
+                  "refs": Map {},
+                },
+                "tests": Array [
+                  [Function],
+                ],
+                "transforms": Array [
+                  [Function],
+                ],
+              },
+            },
+            "tests": Array [],
+            "transforms": Array [
+              [Function],
+            ],
+          }
+        }
+      >
+        <Form>
+          <form
+            action="#"
+            onReset={[Function]}
+            onSubmit={[Function]}
+          >
+            <label
+              htmlFor="username"
+            >
+              Username:
+            </label>
+            <Field
+              id="username"
+              name="username"
+              type="text"
+            >
+              <input
+                id="username"
+                name="username"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </Field>
+            <button
+              disabled={false}
+              type="submit"
+            >
+              Submit
+            </button>
+            <span>
+              Try: "Antonette"
+            </span>
+            <FormikConnect(ErrorMessageImpl)
+              component="div"
+              name="username"
+            >
+              <ErrorMessageImpl
+                component="div"
+                formik={
+                  Object {
+                    "dirty": true,
+                    "errors": Object {
+                      "username": "Required",
+                    },
+                    "getFieldHelpers": [Function],
+                    "getFieldMeta": [Function],
+                    "getFieldProps": [Function],
+                    "handleBlur": [Function],
+                    "handleChange": [Function],
+                    "handleReset": [Function],
+                    "handleSubmit": [Function],
+                    "initialErrors": Object {},
+                    "initialStatus": undefined,
+                    "initialTouched": Object {},
+                    "initialValues": Object {
+                      "username": "Bret",
+                    },
+                    "isSubmitting": false,
+                    "isValid": false,
+                    "isValidating": false,
+                    "registerField": [Function],
+                    "resetForm": [Function],
+                    "setErrors": [Function],
+                    "setFieldError": [Function],
+                    "setFieldTouched": [Function],
+                    "setFieldValue": [Function],
+                    "setFormikState": [Function],
+                    "setStatus": [Function],
+                    "setSubmitting": [Function],
+                    "setTouched": [Function],
+                    "setValues": [Function],
+                    "status": undefined,
+                    "submitCount": 0,
+                    "submitForm": [Function],
+                    "touched": Object {
+                      "username": true,
+                    },
+                    "unregisterField": [Function],
+                    "validateField": [Function],
+                    "validateForm": [Function],
+                    "validateOnBlur": true,
+                    "validateOnChange": true,
+                    "validateOnMount": false,
+                    "values": Object {
+                      "username": "",
+                    },
+                  }
+                }
+                name="username"
+              >
+                <div>
+                  Required
+                </div>
+              </ErrorMessageImpl>
+            </FormikConnect(ErrorMessageImpl)>
+          </form>
+        </Form>
+      </Formik>
+      <section>
+        <h2 />
+        <dl>
+          <dt>
+            Username
+          </dt>
+          <dd />
+          <dt>
+            Email
+          </dt>
+          <dd />
+          <dt>
+            Website
+          </dt>
+          <dd />
+        </dl>
+      </section>
+      <section>
+        <h2>
+          Todo
+        </h2>
+        <ul />
+      </section>
+      <section>
+        <h2>
+          Completed
+        </h2>
+        <ul />
       </section>
     </div>
   </div>
