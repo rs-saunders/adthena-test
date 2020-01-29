@@ -30,18 +30,30 @@ exports[`TaskTwo renders a todo list 1`] = `
     <div
       className="content"
     >
-      <ul>
-        <li
-          key="21"
-        >
-          suscipit repellat esse quibusdam voluptatem incidunt
-        </li>
-        <li
-          key="22"
-        >
-          distinctio vitae autem nihil ut molestias quo
-        </li>
-      </ul>
+      <section>
+        <h2>
+          Todo
+        </h2>
+        <ul>
+          <li
+            key="1"
+          >
+            a task still to do
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>
+          Completed
+        </h2>
+        <ul>
+          <li
+            key="2"
+          >
+            a completed task
+          </li>
+        </ul>
+      </section>
     </div>
   </div>
 </TaskTwo>

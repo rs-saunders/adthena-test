@@ -9,7 +9,26 @@ const TaskTwo = () => {
       <div className="content">
         {todos === null
           ? <div>Loading...</div>
-          : <ul>{todos.map((todo) => <li key={todo.id}>{todo.title}</li>)}</ul>}
+          : (
+            <>
+              <section>
+                <h2>Todo</h2>
+                <ul>
+                  {todos
+                    .filter((todo) => !todo.completed)
+                    .map((todo) => <li key={todo.id}>{todo.title}</li>)}
+                </ul>
+              </section>
+              <section>
+                <h2>Completed</h2>
+                <ul>
+                  {todos
+                    .filter((todo) => todo.completed)
+                    .map((todo) => <li key={todo.id}>{todo.title}</li>)}
+                </ul>
+              </section>
+            </>
+          )}
       </div>
     </div>
   );

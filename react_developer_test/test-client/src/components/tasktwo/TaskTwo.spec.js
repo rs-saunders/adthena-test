@@ -25,14 +25,14 @@ describe('TaskTwo', () => {
     mock.onGet('https://jsonplaceholder.typicode.com/todos?userId=1').reply(200, [
       {
         userId: 1,
-        id: 21,
-        title: 'suscipit repellat esse quibusdam voluptatem incidunt',
+        id: 1,
+        title: 'a task still to do',
         completed: false,
       },
       {
         userId: 1,
-        id: 22,
-        title: 'distinctio vitae autem nihil ut molestias quo',
+        id: 2,
+        title: 'a completed task',
         completed: true
       },
     ]);
