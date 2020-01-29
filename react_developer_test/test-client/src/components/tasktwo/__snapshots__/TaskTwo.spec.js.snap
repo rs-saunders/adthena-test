@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskTwo renders a Loading... message 1`] = `
+<TaskTwo>
+  <div
+    className="task"
+  >
+    <h1>
+      Task Two
+    </h1>
+    <div
+      className="content"
+    >
+      <div>
+        Loading...
+      </div>
+    </div>
+  </div>
+</TaskTwo>
+`;
+
+exports[`TaskTwo renders a todo list 1`] = `
+<TaskTwo>
+  <div
+    className="task"
+  >
+    <h1>
+      Task Two
+    </h1>
+    <div
+      className="content"
+    >
+      <ul>
+        <li
+          key="21"
+        >
+          suscipit repellat esse quibusdam voluptatem incidunt
+        </li>
+        <li
+          key="22"
+        >
+          distinctio vitae autem nihil ut molestias quo
+        </li>
+      </ul>
+    </div>
+  </div>
+</TaskTwo>
+`;
